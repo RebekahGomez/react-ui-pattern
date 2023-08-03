@@ -1,3 +1,48 @@
-.App {
+.app {
+  height: 100vh
+}
+
+body {
+  background-image: url("../public/rick-and-morty-cool.jpg");
+}
+
+nav {
   text-align: center;
+  font-family: 'Get Schwifty';
+}
+
+.navlink {
+  text-decoration: none;
+  color: rgb(67, 222, 67);
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.char-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  color: white;
+  max-width: 500px;
+  /* max-height: 600px; */
+  /* background-color: rgb(67, 222, 67); */
+  /* background-blend-mode: overlay; */
+}
+
+.char-items {
+  grid-column: 2 / 3;
+}
+
+.char-details img {
+  grid-column: 1 / 2;
+}
+
+
+@media (max-width: 768px) {
+  .char-details {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
 }

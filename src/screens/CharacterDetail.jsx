@@ -19,12 +19,14 @@ export default function CharacterDetail() {
   }
 
   return (
-    <div>
+    <div className="char-details">
       <h1>{character.name}</h1>
       <img src={character.image} alt={character?.name} />
-      <h2>{character.species}</h2>
-      <h3>{character.gender}</h3>
-      {<p>{character.status}</p>}
+      <div className="char-items">
+        <h3>Species: {character.species}</h3>
+        <p>Gender: {character.gender}</p>
+        {<p>Health Status: {character.status}</p>}
+      </div>
     </div>
   )
 }
