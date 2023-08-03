@@ -5,12 +5,13 @@ import { getCharacter } from "../services/characters";
 export default function CharacterDetail() {
   const [character, setCharacter] = useState({})
 
+
   let { id } = useParams()
   let navigate = useNavigate()
 
   useEffect(() => {
     fetchCharacter()
-  }, [])
+  }, [id])
 
   async function fetchCharacter() {
     const oneCharacter = await getCharacter(id)
@@ -19,13 +20,11 @@ export default function CharacterDetail() {
 
   return (
     <div>
-      {/* looks like the array in the API is called "results"? */}
-      {/* but when I run this in the browser, it says 'results' not defined */}
-      <h1>{results.name}</h1>
-      <img src={results.image} alt={results.name} />
-      <h2>{results.species}</h2>
-      <h3>{results.gender}</h3>
-      {results.alive ? <p>Alive</p> : <p>Dead</p>}
+      <h1>{character.name}</h1>
+      <img src={character.image} alt={character?.name} />
+      <h2>{character.species}</h2>
+      <h3>{character.gender}</h3>
+      {<p>{character.status}</p>}
     </div>
   )
 }

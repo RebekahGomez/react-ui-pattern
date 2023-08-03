@@ -1,13 +1,11 @@
 import { NavLink } from "react-router-dom"
 
-export default function Nav() {
+export default function Nav({ characters }) {
   return (
     <nav>
-      <NavLink to="/api/character/:id">Rick</NavLink>
-      <NavLink to="">Morty</NavLink>
-      <NavLink to="">Summer</NavLink>
-      <NavLink to="">Beth</NavLink>
-      <NavLink to="">Jerry</NavLink>
+      {characters?.map((char) => (
+        <NavLink to={`/character/${char.id}`} key={char.id}>{char.name}</NavLink>
+      ))}
     </nav>
   )
 }
