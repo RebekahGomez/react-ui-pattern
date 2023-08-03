@@ -1,17 +1,6 @@
 import axios from "axios";
 
-let apiUrl;
-
-const apiUrls = {
-  production: "https://rickandmortyapi.com/api",
-  development: "https://rickandmortyapi.com/api"
-}
-
-if (window.location.hostname === "localhost") {
-  apiUrl = apiUrls.development
-} else {
-  apiUrl = apiUrls.production
-}
+let apiUrl = "https://rickandmortyapi.com/api"
 
 const api = axios.create({
   baseURL: apiUrl

@@ -21,9 +21,7 @@ export default function Characters({ characters }) {
       <h2>All Characters</h2>
       <div className="characters-container">
         {characters.map((character) => (
-          <div>
-            <Character character={character} />
-          </div>
+          <Character character={character} />
         ))}
       </div>
     </div>

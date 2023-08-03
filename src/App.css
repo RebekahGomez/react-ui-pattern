@@ -30,7 +30,18 @@ nav {
   gap: 10px;
 }
 
+.character-item {
+  width: 300px;
+  height: 300px;
+  border: 3px solid rgb(48, 48, 48);
+}
 
+.character-item:hover {
+  box-shadow: 10px 10px 30px rgb(67, 222, 67);
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+}
 
 .char-details {
   display: grid;
