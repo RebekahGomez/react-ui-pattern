@@ -1,3 +1,28 @@
+# React Frontend API
+- The purpose of this project was to take a pre-existing API and create a frontend using React
+- [Base URL for the API](https://rickandmortyapi.com/api)
+
+### Basics
+- This frontend is quite simple -- I just wanted to work on creating a character details page without hard-coding any of the character's information
+- There are 
+  - 2 components: Nav Bar and Character
+  - 2 screens: Characters and Character Detail 
+  - 2 functions: get (all) Characters and get (one) Character
+- This project is easily scalable to include more or fewer characters --> in App.js
+
+``` 
+  async function fetchCharacters() {
+    const charactersData = await getCharacters()
+    charactersData.length = 15
+    setCharacters(charactersData)
+  }
+```
+   - In the above code, simply change the number to show however many characters you want to see.  Each character will automatically have their name displayed at the top with their own Character Detail page
+
+[Rebekah Gomez](https://www.linkedin.com/in/rebekah-gomez/) 2023
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -3,6 +3,8 @@ import { getCharacters } from "../services/characters"
 import Character from "../components/Character.jsx"
 
 export default function Characters({ characters }) {
+  // We don't need all of this because we've already
+  // called useState and useEffect for the characters in App.js
   // const [characters, setCharacters] = useState([])
 
   // useEffect(() => {
