@@ -21,7 +21,7 @@ export default function CharacterDetail() {
   return (
     <div className="char-details">
       <h1>{character.name}</h1>
-      <img src={character.image} alt={character?.name} />
+      <img src={character.image} alt={character.name} />
       <div className="char-items">
         <h3>Species: {character.species}</h3>
         <p>Gender: {character.gender}</p>
