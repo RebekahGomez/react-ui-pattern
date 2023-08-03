@@ -1,9 +1,12 @@
 # React Frontend API
 - The purpose of this project was to take a pre-existing API and create a frontend using React
 - [Base URL for the API](https://rickandmortyapi.com/api)
+- Taken from this [Rick & Morty API](rickandmortyapi.com/documentation/#rest)
 
 ### Basics
 - This frontend is quite simple -- I just wanted to work on creating a character details page without hard-coding any of the character's information
+- Path for "Home" "/"
+- Path for individual characters "/character/:id"
 - There are 
   - 2 components: Nav Bar and Character
   - 2 screens: Characters and Character Detail 
